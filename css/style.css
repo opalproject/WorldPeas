@@ -106,7 +106,6 @@
   flex-direction: column;
   align-items: flex-start;
   gap: var(--spacing-spacing-lg, 2rem);
-  border: 1px solid khaki;
 }
 .aside ul {
   width: 6.31rem;
@@ -135,17 +134,32 @@
   align-items: flex-start;
   gap: var(--spacing-spacing-xl, 3rem);
   align-self: stretch;
-  border: 1px solid forestgreen;
 }
 
 .main-content__image {
-  border: 1px solid red;
+  position: relative;
   width: 22.875rem;
   height: 31rem;
   flex-shrink: 0;
 }
 
 .image {
+}
+
+.like {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  display: inline-flex;
+  padding: var(--spacing-spacing-sm, 0.5rem);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-spacing-none, 0rem);
+
+  border-radius: var(--radius-radius-full, 22.5rem);
+  border: 1px solid var(--border-border-primary, #202020);
+  background: var(--surface-surface-primary, #f1f1f1);
 }
 
 .main-content__text {
@@ -179,4 +193,22 @@
   font-weight: 400;
   line-height: 2rem; /* 177.778% */
   letter-spacing: -0.01125rem;
+}
+
+.main-content__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-spacing-lg, 2rem);
+  flex: 1 0 0;
+}
+
+.main-content__qty-price-button {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+  align-self: stretch;
+  flex-wrap: wrap;
+  border: 1px solid red;
 }
