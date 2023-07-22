@@ -318,7 +318,7 @@ a:hover {
 
 .sign {
   display: flex;
-  padding: 2rem 6.5rem;
+  padding: var(--spacing-spacing-lg, 2rem) var(--spacing-spacing-2-xl, 6.5rem);
   justify-content: space-between;
   align-items: flex-start;
   align-content: flex-start;
