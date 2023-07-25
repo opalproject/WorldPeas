@@ -180,9 +180,12 @@ a:hover {
 
 .main-content__image {
   position: relative;
+  flex-shrink: 0;
+}
+
+.image {
   width: 22.875rem;
   height: 31rem;
-  flex-shrink: 0;
 }
 
 .like {
